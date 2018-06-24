@@ -1,0 +1,38 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.2.RELEASE'
+    id 'java'
+}
+
+group 'ru.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+
+    // Spring
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '2.0.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.0.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.0.2.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.2.RELEASE'
+
+    // Jackson
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.5'
+
+    // Lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+
+    // Http
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.3'
+
+    // Mongo
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.7.1'
+}

@@ -1,0 +1,10 @@
+.idea
+/out/
+.gradle
+build/
+*.iml
+
+/docker/images/app/app.jar
+application-local.yml
+application-unitTest.yml
+log/
